@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Registration system</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Student Registration System</h1>
+        </header>
+
+        <main>
+            <!-- main content container -->
+            <div class="main-container">
+                <div class="form-container">
+                    <!-- form container to take input from user -->
+                    <form action="" id="student-form">
+                        <label for="name">Student Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter student name"
+                        />
+                        <label for="student-image">Student Image</label>
+                        <input
+                            type="file"
+                            id="student-image"
+                            accept="image/*"
+                        />
+
+                        <label for="student-id">Student ID</label>
+                        <input
+                            type="text"
+                            id="student-id"
+                            placeholder="Enter student ID"
+                        />
+
+                        <label for="student-class">Student Class</label>
+                        <input
+                            type="text"
+                            id="student-class"
+                            placeholder="Enter Student Class"
+                        />
+
+                        <label for="student-roll-number"
+                            >Student Roll Number</label
+                        >
+                        <input
+                            type="text"
+                            id="student-roll-number"
+                            placeholder="Enter Student Roll Number"
+                        />
+
+                        <label for="student-email">Student Email</label>
+                        <input
+                            type="email"
+                            id="student-email"
+                            placeholder="Enter Student Email"
+                        />
+
+                        <label for="student-phone-number"
+                            >Student Phone Number</label
+                        >
+                        <input
+                            type="tel"
+                            id="student-phone-number"
+                            placeholder="Enter Student Phone Number"
+                        />
+
+                        <label for="student-date-of-birth">Date of Birth</label>
+                        <input type="date" id="student-date-of-birth" />
+
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="" selected>Select Gender</option>
+                            <option value="Not to say">Not to say</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+
+                        <label for="student-address">Address</label>
+                        <textarea
+                            name=""
+                            id="student-address"
+                            rows="3"
+                            placeholder="Enter Student Address"
+                        ></textarea>
+
+                        <button id="add-btn">Add</button>
+                    </form>
+                </div>
+                <div id="table-container">
+                    <table id="student-table">
+                        <thead id="table-head">
+                            <tr>
+                                <th id="table-head-name">Name</th>
+                                <th id="table-head-id">Id</th>
+                                <th id="table-head-class">Class</th>
+                                <th id="table-head-roll-no">Roll No</th>
+                                <th id="table-head-email">Email</th>
+                                <th id="table-head-phone">Phone</th>
+                                <th id="table-head-dob">DOB</th>
+                                <th id="table-head-gender">Gender</th>
+                                <th id="table-head-address">Address</th>
+                                <th id="table-head-empty"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-table-t-body">
+                            <!-- Data will be inserted here dynamically using javascript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2025 Student Registration System. All rights reserved.</p>
+            <p>
+                Contact:
+                <a href="mailto:your_email@example.com" style="color: #00d4ff"
+                    >Email Me</a
+                >
+                <a href="tel:" style="color: #00d4ff">Call Me</a>
+            </p>
+            <p>
+                <a
+                    href="https://github.com/ankitNegiDev/student-registration-system"
+                    target="_blank"
+                    style="color: #00d4ff"
+                    >GitHub</a
+                >
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
